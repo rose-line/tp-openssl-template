@@ -38,7 +38,7 @@ Le https://wiki.openssl.org/index.php/Binaries[Wiki du projet OpenSSL] propose d
 
 == Méthodologie de rendu
 
-Pour le rendu, vous suivrez les xref:../methodologie_tp.adoc[instructions habituelles].
+Pour le rendu, vous suivrez les xref:methodologie_tp.adoc[instructions habituelles].
 
 == TP Partie 1 - Découverte
 

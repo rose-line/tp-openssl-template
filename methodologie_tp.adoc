@@ -1,0 +1,46 @@
+:last-update-label!:
+
+== Méthodologie de rendu pour les TPs
+
+* Vous utiliserez un éditeur de texte simple pour vos réponses (pas de Google Docs, Word ou autre format riche)
+** VS Code conseillé pour avoir le support automatique de Git
+* Vous utiliserez Asciidoc ou Markdown pour rédiger vos fichiers-réponses
+** ce sont des formats utilisés pour la documentation qui permettent de rédiger *et de formater* en même temps, uniquement sous forme de texte
+** par exemple, cette page est écrite en Asciidoc ; vous pouvez voir le code source en cliquant sur le bouton `Raw` de la page
+** GitHub, notamment, est capable d'interpréter ces formats automatiquement et de les afficher correctement
+** https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[Documentation syntaxe Asciidoc]
+** https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax[Documentation syntaxe Markdown]
+* Pour chaque question, vous préciserez :
+** la commande utilisée (si une commande est demandée)
+** la sortie de la commande le cas échéant (ce qui s'affiche à l'écran)
+** votre réponse argumentée si nécessaire
+* La commande doit être clairement différenciée de la sortie en étant précédée d'un caractère de prompt (par exemple `$`).
+* Vous versionerez ces fichiers-réponses avec Git et les pousserez sur le dépôt GitHub *au moins une fois par séance*
+** si le devoir a été accepté depuis GitHub Classroom, le dépôt a déjà été créé pour vous et c'est sur celui-ci que vous travaillerez
+* Voici un exemple de réponse :
+
+[source,shell]
+----
+$ ls
+boot  etc   init  lib32  libx32  media  opt  root  sbin  srv  tmp   var
+bin   dev   home  lib    lib6    lost+found  mnt   proc  run  snap  sys  usr
+----
+
+* Pour produire cet affichage en police fixe formaté, utilisez votre langage de balisage :
+** en Markdown, on encadre avec trois _backticks_ suivis éventuellement du langage, ici `shell` :
+----
+ ```shell
+ $ ls
+ boot  etc   init  lib32  libx32  media  opt  root  sbin  srv  tmp   var
+ bin   dev   home  lib    lib6    lost+found  mnt   proc  run  snap  sys  usr
+ ```
+----
+** en Asciidoc, on utilise le balisage `[source]` (en spécifiant éventuellement le langage) :
+----
+ [source,shell]
+ ----
+ $ ls
+ boot  etc   init  lib32  libx32  media  opt  root  sbin  srv  tmp   var
+ bin   dev   home  lib    lib6    lost+found  mnt   proc  run  snap  sys  usr
+ ----
+----
